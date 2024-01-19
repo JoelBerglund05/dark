@@ -1,0 +1,142 @@
+/* ---------- Color Module Styles ----------- */
+:root{
+  --primary-color: #262F38;
+  --secondary-color: #364452;
+  --highlight-color: #DD7A33;
+  --light-text-color: #E8F4FF;
+  --dark-text-color: #080C10;
+  --link-color: #85E7FD;
+}
+
+
+body {
+  color: var(--light-text-color);
+  background: var(--primary-color);
+}
+
+.navbar-brand{
+  color: var(--light-text-color);
+}
+
+#page,
+#main-wrapper,
+.region-primary-menu .menu-item a.is-active,
+.region-primary-menu .menu-item--active-trail a {
+  background: var(--primary-color);
+}
+
+.tabs ul.primary li a.is-active {
+  background-color: var(--primary-color);
+}
+
+.tabs ul.primary li.is-active a {
+  background-color: var(--primary-color);
+  border-bottom-color: #fff;
+}
+
+#navbar-top {
+  background-color: var(--secondary-color);
+}
+
+#navbar-main {
+  background-color: var(--secondary-color);
+}
+
+a,
+.link {
+  color: var(--link-color);
+}
+
+a:hover,
+a:focus,
+.link:hover,
+.link:focus {
+  color: #018fe2;
+}
+.nav-item .dropdown-item a.active {
+  color: var(--light-text-color);
+}
+.nav-link {
+  color: rgb(252, 237, 237);
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: rgb(231, 231, 231);
+}
+a:active,
+.link:active {
+  color: #23aeff;
+}
+
+.page-item.active .page-link {
+  background-color: var(--link-color);
+  border-color: var(--link-color);
+}
+
+.page-link,
+.page-link:hover {
+  color: var(--link-color);
+}
+
+.sidebar .block {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #0256b1;
+}
+
+.site-footer {
+  background: #292929;
+}
+
+.region-header,
+.region-header a,
+.region-header li a.is-active,
+.region-header .site-branding__text,
+.region-header .site-branding,
+.region-header .site-branding__text a,
+.region-header .site-branding a,
+.region-secondary-menu .menu-item a,
+.region-secondary-menu .menu-item a.is-active {
+  color: var(--light-text-color);
+}
+
+.node--view-mode-teaser h2 a{
+  color: var(--highlight-color);
+}
+
+.node__meta{
+  color: red;
+}
+
+.node--view-mode-teaser{
+  background: var(--secondary-color);
+}
+
+.row{
+  margin: 1rem 0 0 0;
+}
+
+/* ---------- Color Form ----------- */
+
+[dir="rtl"] .color-form .color-palette {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+[dir="rtl"] .color-form .form-item label {
+  float: right;
+}
+
+[dir="rtl"] .color-form .color-palette .lock {
+  right: -20px;
+  left: 0;
+}
