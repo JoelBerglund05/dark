@@ -7,6 +7,8 @@
     min-height: 100%;
     padding: 0 1rem 0 1rem;
     border-radius: .5rem;
+    border: 0;
+    box-shadow: var(--dark) .1rem .1rem .5rem;
 }
 .views-row{
     margin: 1rem 0 1rem 0;
@@ -37,6 +39,7 @@
 }
 .search-block-form{
     margin-left: auto;
+    gap: .5rem;
 }
 @media (width >= 992px){
     .row main section .block .content .views-element-container .contextual-region .view-content{

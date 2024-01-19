@@ -1,60 +1,52 @@
 /* ---------- Color Module Styles ----------- */
-:root{
-  --primary-color: #262F38;
-  --secondary-color: #364452;
-  --highlight-color: #DD7A33;
-  --light-text-color: #E8F4FF;
-  --dark-text-color: #080C10;
-  --link-color: #85E7FD;
-}
-
+@import url(bootstrap.min.css);
 
 body {
-  color: var(--light-text-color);
-  background: var(--primary-color);
+  color: var(--light);
+  background: var(--primary);
 }
 
 .navbar-brand{
-  color: var(--light-text-color);
+  color: var(--light);
 }
 
 #page,
 #main-wrapper,
 .region-primary-menu .menu-item a.is-active,
 .region-primary-menu .menu-item--active-trail a {
-  background: var(--primary-color);
+  background: var(--primary);
 }
 
 .tabs ul.primary li a.is-active {
-  background-color: var(--primary-color);
+  background-color: var(--primary);
 }
 
 .tabs ul.primary li.is-active a {
-  background-color: var(--primary-color);
+  background-color: var(--primary);
   border-bottom-color: #fff;
 }
 
 #navbar-top {
-  background-color: var(--secondary-color);
+  background-color: var(--secondary);
 }
 
 #navbar-main {
-  background-color: var(--secondary-color);
+  background-color: var(--secondary);
 }
 
 a,
 .link {
-  color: var(--link-color);
+  color: var(--link);
 }
 
 a:hover,
 a:focus,
 .link:hover,
 .link:focus {
-  color: #018fe2;
+  color: var(--link-hover);
 }
 .nav-item .dropdown-item a.active {
-  color: var(--light-text-color);
+  color: var(--light);
 }
 .nav-link {
   color: rgb(252, 237, 237);
@@ -69,32 +61,31 @@ a:active,
 }
 
 .page-item.active .page-link {
-  background-color: var(--link-color);
-  border-color: var(--link-color);
+  background-color: var(--link);
+  border-color: var(--link);
 }
 
 .page-link,
 .page-link:hover {
-  color: var(--link-color);
+  color: var(--link);
 }
 
 .sidebar .block {
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
+  background-color: var(--primary);
+  border-color: var(--primary);
 }
-
 .btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: var(--info);
+  border-color: var(--info);
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: #0256b1;
+  background-color: var(--info);
 }
 
 .site-footer {
-  background: #292929;
+  background: var(--secondary);
 }
 
 .region-header,
@@ -106,25 +97,36 @@ a:active,
 .region-header .site-branding a,
 .region-secondary-menu .menu-item a,
 .region-secondary-menu .menu-item a.is-active {
-  color: var(--light-text-color);
+  color: var(--light);
 }
 
 .node--view-mode-teaser h2 a{
-  color: var(--highlight-color);
+  color: var(--info);
 }
 
 .node__meta{
-  color: red;
+  color: var(--light);
 }
-
+.form-search{
+  background-color: var(--primary);
+  border: 0;
+  color: var(--light);
+}
+.form-search:focus{
+  background-color: var(--primary);
+  color: var(--light);
+}
 .node--view-mode-teaser{
-  background: var(--secondary-color);
+  background: var(--secondary);
 }
 
 .row{
   margin: 1rem 0 0 0;
 }
-
+.pagination .page-item .page-link{
+  background-color: var(--secondary);
+  border: 0;
+}
 /* ---------- Color Form ----------- */
 
 [dir="rtl"] .color-form .color-palette {
