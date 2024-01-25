@@ -1,12 +1,16 @@
 /* ---------- Color Module Styles ----------- */
 @import url(bootstrap.min.css);
 
+
 body {
   color: var(--light);
   background: var(--primary);
 }
 
 .navbar-brand{
+  color: var(--light);
+}
+.navbar-brand:hover{
   color: var(--light);
 }
 
@@ -100,7 +104,7 @@ a:active,
   color: var(--light);
 }
 
-.node--view-mode-teaser h2 a{
+.views-row h2 a{
   color: var(--info);
 }
 
@@ -116,7 +120,7 @@ a:active,
   background-color: var(--primary);
   color: var(--light);
 }
-.node--view-mode-teaser{
+.views-row{
   background: var(--secondary);
 }
 
