@@ -20,7 +20,12 @@ body {
 .region-primary-menu .menu-item--active-trail a {
   background: var(--primary);
 }
-
+.breadcrumb{
+  background-color: var(--info);
+}
+.breadcrumb .breadcrumb-item a{
+  color: var(--dark);
+}
 .tabs ul.primary li a.is-active {
   background-color: var(--primary);
 }
@@ -81,11 +86,14 @@ a:active,
 .btn-primary {
   background-color: var(--info);
   border-color: var(--info);
+  color: var(--dark);
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
   background-color: var(--info);
+  border-color: var(--info);
+  color: var(--dark);
 }
 
 .site-footer {

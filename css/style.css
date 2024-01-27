@@ -2,33 +2,30 @@
 .row main section .block .content .views-element-container .contextual-region .view-content{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 3rem 1.5rem;
-    margin-bottom: 2rem;
+    gap: .5rem 1.5rem;
 }
-.views-row{
-    min-height: 100%;
-    padding: 1rem 1rem 0 1rem;
-    border-radius: .5rem;
-    border: 0;
-    box-shadow: var(--dark) .1rem .1rem .5rem;
-
+.row main section .block .content .views-element-container .contextual-region .view-content > .views-row{
     display: grid;
-    grid-template-columns: 1fr;
-}
-.views-row > .node__content{
-    display: grid;
+    gap: 0;
     grid-column: span 1;
     grid-template-columns: subgrid;
     grid-template-rows: subgrid;
-    grid-row: span 3;
-}
-.views-row{
-    margin: 1rem 0 1rem 0;
-}
+    grid-row: span 5;
 
+    min-height: 100%;
+    padding: 1rem 1rem 0 1rem;
+    margin: 1rem 0 1rem 0;
+    border-radius: .5rem;
+    border: 0;
+    box-shadow: var(--dark) .1rem .1rem .5rem;
+}
+.node__meta{
+    margin-bottom: .5rem;
+}
 .field--type-image{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .field--type-image a img{
     object-fit: cover;
@@ -45,8 +42,46 @@
     margin-left: auto;
     gap: .5rem;
 }
+#navbar-main .navbar-toggler{
+    padding: 0;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.show #block-dark-main-menu .nav .nav-item .nav-link{
+    display: none;
+}
 @media (width >= 992px){
     .row main section .block .content .views-element-container .contextual-region .view-content{
         grid-template-columns: repeat(2, 1fr);
     }
+}
+
+/* Animations */
+
+.button-nav .line{
+    transition: 
+    transform 300ms ease-in 300ms,
+    rotate 300ms ease-in,
+    opacity 0ms 300ms;
+    transform-origin: center;
+    background-color: var(--light);
+}
+.button-nav[aria-expanded="true"] .line{
+    transition: 
+    transform 300ms ease-in,
+    rotate 300ms ease-in 300ms,
+    opacity 0ms 300ms;
+
+}
+.button-nav[aria-expanded="true"] .top{
+    transform: translateY(25px);
+    rotate: 45deg;
+}
+.button-nav[aria-expanded="true"] .bottom{
+    transform: translateY(-35px);
+    rotate: -45deg;
+}
+.button-nav[aria-expanded="true"] .middle{
+    opacity: 0;
 }
