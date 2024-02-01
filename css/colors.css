@@ -139,6 +139,15 @@ a:active,
   background-color: var(--secondary);
   border: 0;
 }
+.button{
+  color: var(--light);
+  background: var(--info);
+}
+.button:hover{
+  border: 0;
+  background: var(--info);
+  color: var(--light);
+}
 /* ---------- Color Form ----------- */
 
 [dir="rtl"] .color-form .color-palette {

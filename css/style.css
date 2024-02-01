@@ -1,17 +1,16 @@
-/*Layout*/
 
-.row main section .block .content .views-element-container .contextual-region .view-content{
+.view-content.row{
     display: grid;
     grid-template-columns: 1fr;
     gap: .5rem 1.5rem;
 }
-.row main section .block .content .views-element-container .contextual-region .view-content > .views-row{
+.view-content.row > .views-row{
     display: grid;
     gap: 0;
     grid-column: span 1;
     grid-template-columns: subgrid;
     grid-template-rows: subgrid;
-    grid-row: span 5;
+    grid-row: span 7;
 
     min-height: 100%;
     padding: 1rem 1rem 0 1rem;
@@ -20,38 +19,39 @@
     border: 0;
     box-shadow: var(--dark) .1rem .1rem .5rem;
 }
+.field--name-field-tags, .inline__links .links {
+    display: grid;
+}
+.inline__links .links {
+    gap: 1rem 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    margin-bottom: 1rem;
+}
+.inline__links .links span{
+    margin-left: auto;
+}
+.node__meta{
+    margin-bottom: .5rem;
+}
 .field--type-image{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-@media (width >= 992px){
-    .row main section .block .content .views-element-container .contextual-region .view-content{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-
-/*image cropping*/
-
 .field--type-image a img{
     object-fit: cover;
     max-height: 10rem;
     aspect-ratio: 16 / 9;
 }
-
-
-/*spaceing*/
-
-.node__meta{
-    margin-bottom: .5rem;
+.field--type-image a .image-style-thumbnail{
+    display: none;
 }
 .field--type-entity-reference{
     margin-top: auto;
 }
-.inline__links .links span{
-    margin-left: auto;
-}
+
 .search-block-form{
     margin-left: auto;
     gap: .5rem;
@@ -59,17 +59,28 @@
 #navbar-main .navbar-toggler{
     padding: 0;
 }
-
-
-/*remove unwanted*/
-
 .navbar-toggler:focus{
     box-shadow: none;
 }
-.show #block-dark-main-menu .nav .nav-item .nav-link{
+.show #block-dark-main-menu .nav .nav-item .nav-link, 
+.collapsing #block-dark-main-menu .nav .nav-item .nav-link{
     display: none;
 }
+@media (width >= 992px){
+    .view-content.row{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
+.inline__links .links span{
+    margin: 0;
+}
+.inline__links .links span a{
+    color: var(--dark);
+}
+.navbar-brand img{
+    display: none !important;
+}
 
 /* Animations */
 
