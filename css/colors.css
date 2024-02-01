@@ -140,13 +140,13 @@ a:active,
   border: 0;
 }
 .button{
-  color: var(--light);
+  color: var(--dark);
   background: var(--info);
 }
 .button:hover{
   border: 0;
   background: var(--info);
-  color: var(--light);
+  color: var(--dark);
 }
 /* ---------- Color Form ----------- */
 
