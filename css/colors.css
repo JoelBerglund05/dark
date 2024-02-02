@@ -148,6 +148,16 @@ a:active,
   background: var(--info);
   color: var(--dark);
 }
+.inline__links .links span{
+  color: var(--dark);
+  background-color: var(--info);
+}
+.inline__links .links span a{
+  color: var(--dark);
+  text-align: center;
+}
+
+
 /* ---------- Color Form ----------- */
 
 [dir="rtl"] .color-form .color-palette {

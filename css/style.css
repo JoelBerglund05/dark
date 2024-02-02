@@ -64,6 +64,8 @@
     display: none !important;
 }
 
+/*Spaceing*/
+
 .inline__links .links span{
     margin-left: auto;
 }
@@ -85,9 +87,7 @@
 
 .inline__links .links span{
     margin: 0;
-}
-.inline__links .links span a{
-    color: var(--dark);
+    border-radius: .25rem;
 }
 
 
